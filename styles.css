@@ -1,129 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;500&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    background: #05050a;
-    color: #e0eaff;
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background: #d9d9eaff;
+  color: #e0eaff;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Subtle starfield effect */
 .stars {
-    position: fixed;
-    width: 200vw;
-    height: 200vh;
-    background: radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1px);
-    background-size: 3px 3px;
-    opacity: 0.15;
-    animation: drift 60s linear infinite;
-    transform: translate(-25vw, -25vh);
+  position: fixed;
+  width: 200vw;
+  height: 200vh;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.5) 1px,
+    transparent 1px
+  );
+  background-size: 3px 3px;
+  opacity: 0.15;
+  animation: drift 60s linear infinite;
+  transform: translate(-25vw, -25vh);
 }
 
 @keyframes drift {
-    0% { transform: translate(-25vw, -25vh); }
-    100% { transform: translate(-5vw, -5vh); }
+  0% {
+    transform: translate(-25vw, -25vh);
+  }
+  100% {
+    transform: translate(-5vw, -5vh);
+  }
 }
 
 /* Main container */
 .container {
-    position: relative;
-    max-width: 750px;
-    margin: 80px auto;
-    padding: 20px;
-    backdrop-filter: blur(6px);
+  position: relative;
+  max-width: 750px;
+  margin: 80px auto;
+  padding: 20px;
+  backdrop-filter: blur(6px);
 }
 
 /* Title */
 .title {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 48px;
-    color: #8ad1ff;
-    text-align: center;
-    letter-spacing: 0.15em;
-    text-shadow: 0 0 16px #56c2ff;
-    margin-bottom: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-size: 48px;
+  color: #8ad1ff;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 16px #56c2ff;
+  margin-bottom: 10px;
 }
 
 .subtitle {
-    text-align: center;
-    color: #9bb5d4;
-    font-size: 16px;
-    margin-bottom: 40px;
+  text-align: center;
+  color: #9bb5d4;
+  font-size: 16px;
+  margin-bottom: 40px;
 }
 
 /* Section block */
 .section {
-    margin-bottom: 40px;
-    padding: 20px;
-    border-left: 2px solid #2a96ff;
-    background: rgba(255, 255, 255, 0.02);
-    border-radius: 4px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-left: 2px solid #2a96ff;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
 }
 
 .section h2 {
-    font-family: 'Orbitron', sans-serif;
-    color: #56c2ff;
-    text-shadow: 0 0 8px #2a96ff;
-    margin-top: 0;
+  font-family: "Orbitron", sans-serif;
+  color: #56c2ff;
+  text-shadow: 0 0 8px #2a96ff;
+  margin-top: 0;
 }
 
 a {
-    color: #56c2ff;
-    text-decoration: none;
+  color: #56c2ff;
+  text-decoration: none;
 }
 
 a:hover {
-    text-shadow: 0 0 8px #56c2ff;
+  text-shadow: 0 0 8px #56c2ff;
 }
 /* Card layout grid */
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
 }
 
 /* Sci-fi glowing cards */
 .card {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid #2a96ff;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-    box-shadow: 0 0 12px rgba(42, 150, 255, 0.3);
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #2a96ff;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(42, 150, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 20px rgba(42, 150, 255, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(42, 150, 255, 0.6);
 }
 
 /* Image on top of card */
 .card-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 12px;
-    box-shadow: 0 0 10px rgba(42, 150, 255, 0.4);
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 10px rgba(42, 150, 255, 0.4);
 }
 
 /* Links inside each card */
 .card-links {
-    margin-top: 12px;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .card-links a {
-    color: #56c2ff;
-    font-weight: 500;
-    text-decoration: none;
+  color: #56c2ff;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .card-links a:hover {
-    text-shadow: 0 0 8px #56c2ff;
+  text-shadow: 0 0 8px #56c2ff;
 }
-
