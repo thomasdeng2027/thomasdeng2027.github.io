@@ -88,6 +88,9 @@ body {
   color: #4aa3ff;
   margin-top: 0;
 }
+.section p {
+  font-size: 20px;
+}
 
 /* Links */
 a {
