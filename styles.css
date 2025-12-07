@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 80px auto;
   padding: 20px;
 }
@@ -108,7 +108,7 @@ a:hover {
 }
 
 .card p {
-  font-size: 16px; /* bigger text */
+  font-size: 20px; /* bigger text */
   line-height: 1.45;
 }
 
