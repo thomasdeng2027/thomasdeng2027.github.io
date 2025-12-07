@@ -47,8 +47,8 @@ body {
 }
 
 .headshot {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #4aa3ff;
@@ -130,7 +130,7 @@ a:hover {
 /* Card images */
 .card-image {
   width: 100%;
-  height: 155px;
+  height: 180px;
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 12px;
