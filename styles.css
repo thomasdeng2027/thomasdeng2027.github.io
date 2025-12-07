@@ -1,28 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;500&display=swap");
 
+/* =============== GLOBAL LAYOUT =============== */
+
 body {
   margin: 0;
   padding: 0;
-  background: #f8f5e9; /* light cream */
-  color: #1a1a1a; /* dark text */
+  background: #f8f5e9; /* Cream background */
+  color: #1a1a1a;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
-}
-
-.header-block {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* Circular glowing headshot */
-.headshot {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 18px;
-  border: 2px solid #2a96ff;
-  box-shadow: 0 0 18px rgba(42, 150, 255, 0.6);
 }
 
 /* Subtle starfield effect */
@@ -30,13 +16,10 @@ body {
   position: fixed;
   width: 200vw;
   height: 200vh;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.5) 1px,
-    transparent 1px
-  );
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.35) 1px, transparent 1px);
   background-size: 3px 3px;
-  opacity: 0.15;
+  opacity: 0.12;
   animation: drift 60s linear infinite;
   transform: translate(-25vw, -25vh);
 }
@@ -50,108 +33,170 @@ body {
   }
 }
 
-/* Main container */
 .container {
-  position: relative;
-  max-width: 750px;
+  max-width: 900px;
   margin: 80px auto;
   padding: 20px;
-  backdrop-filter: blur(6px);
 }
 
-/* Title */
+/* =============== HEADER SECTION =============== */
+
+.header-block {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/* Circular glowing headshot */
+.headshot {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4aa3ff;
+  box-shadow: 0 0 20px rgba(74, 163, 255, 0.5);
+  margin: 0 auto 18px auto;
+  display: block;
+}
+
 .title {
   font-family: "Orbitron", sans-serif;
-  font-size: 48px;
-  color: #8ad1ff;
-  text-align: center;
-  letter-spacing: 0.15em;
-  text-shadow: 0 0 16px #56c2ff;
-  margin-bottom: 10px;
+  font-size: 46px;
+  color: #4aa3ff;
+  text-shadow: 0 0 14px rgba(74, 163, 255, 0.6);
+  margin-bottom: 8px;
 }
 
 .subtitle {
-  text-align: center;
-  color: #9bb5d4;
   font-size: 16px;
-  margin-bottom: 40px;
+  color: #5d6d7e;
+  margin-bottom: 35px;
 }
 
-/* Section block */
+/* =============== SECTION BLOCKS =============== */
+
 .section {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 22px;
   margin-bottom: 40px;
-  padding: 20px;
-  border-left: 3px solid #4aa3ff;
-  background: rgba(255, 255, 255, 0.8);
+  border-left: 4px solid #4aa3ff;
   border-radius: 6px;
-  box-shadow: 0 0 10px rgba(100, 150, 255, 0.15);
+  box-shadow: 0 0 12px rgba(74, 163, 255, 0.18);
 }
 
 .section h2 {
   font-family: "Orbitron", sans-serif;
-  color: #56c2ff;
-  text-shadow: 0 0 8px #2a96ff;
+  font-size: 22px;
+  color: #4aa3ff;
+  text-shadow: 0 0 6px rgba(74, 163, 255, 0.4);
   margin-top: 0;
 }
 
+/* Links */
 a {
-  color: #56c2ff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-shadow: 0 0 8px #56c2ff;
-}
-/* Card layout grid */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-}
-
-/* Sci-fi glowing cards */
-.card {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #4aa3ff;
-  border-radius: 8px;
-  padding: 16px;
-  text-align: center;
-  box-shadow: 0 0 12px rgba(50, 120, 255, 0.18);
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 18px rgba(50, 120, 255, 0.35);
-}
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 20px rgba(42, 150, 255, 0.6);
-}
-
-/* Image on top of card */
-.card-image {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 6px;
-  margin-bottom: 12px;
-  box-shadow: 0 0 10px rgba(50, 120, 255, 0.25);
-}
-
-/* Links inside each card */
-.card-links {
-  margin-top: 12px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.card-links a {
-  color: #56c2ff;
+  color: #4aa3ff;
   font-weight: 500;
   text-decoration: none;
 }
 
-.card-links a:hover {
-  text-shadow: 0 0 8px #56c2ff;
+a:hover {
+  text-shadow: 0 0 6px rgba(74, 163, 255, 0.8);
+}
+
+/* =============== CARD GRID =============== */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #4aa3ff;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 0 14px rgba(74, 163, 255, 0.23);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 22px rgba(74, 163, 255, 0.5);
+}
+
+/* Keep card images NORMALIZED */
+.card-image {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-shadow: 0 0 10px rgba(74, 163, 255, 0.2);
+}
+
+/* Card links */
+.card-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.card-links a {
+  color: #4aa3ff;
+  font-weight: 600;
+}
+
+/* =============== AKEER FOUNDATION CARD =============== */
+
+.akeer-wide-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 26px;
+  border-radius: 10px;
+  border: 1px solid #4aa3ff;
+  box-shadow: 0 0 18px rgba(74, 163, 255, 0.25);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* FIX non-card image being too big */
+.akeer-image {
+  width: 85%;
+  max-height: 220px;
+  margin: 0 auto 20px auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(74, 163, 255, 0.25);
+}
+
+.akeer-button {
+  display: inline-block;
+  padding: 10px 22px;
+  background: rgba(74, 163, 255, 0.18);
+  border: 1px solid #4aa3ff;
+  border-radius: 6px;
+  font-family: "Orbitron", sans-serif;
+  color: #4aa3ff;
+  transition: 0.25s ease;
+}
+
+.akeer-button:hover {
+  background: rgba(74, 163, 255, 0.3);
+  box-shadow: 0 0 12px rgba(74, 163, 255, 0.5);
+}
+
+/* =============== AUDIO PLAYER =============== */
+
+.audio-block {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.audio-player {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(74, 163, 255, 0.25);
 }
