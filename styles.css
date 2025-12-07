@@ -77,3 +77,53 @@ a {
 a:hover {
     text-shadow: 0 0 8px #56c2ff;
 }
+/* Card layout grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+/* Sci-fi glowing cards */
+.card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid #2a96ff;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(42, 150, 255, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(42, 150, 255, 0.6);
+}
+
+/* Image on top of card */
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 10px rgba(42, 150, 255, 0.4);
+}
+
+/* Links inside each card */
+.card-links {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links a {
+    color: #56c2ff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.card-links a:hover {
+    text-shadow: 0 0 8px #56c2ff;
+}
+
