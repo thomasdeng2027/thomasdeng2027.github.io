@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +15,6 @@
     <div class="container">
         <div class="header-block">
             <img src="images/thomas-headshot.jpg" class="headshot" alt="Thomas Deng Headshot">
-
             <h1 class="title">THOMAS DENG</h1>
             <p class="subtitle">Robotics • Autonomous Vehicles • Machine Learning Research</p>
         </div>
@@ -22,9 +22,7 @@
         <div class="section">
             <h2>About Me</h2>
             <p>
-                Hello! I am a junior at Stanford studying Computer Science. I work on robotics, autonomous vehicles, and machine learning at the Interactive Perception and Robot Learning Lab as a part of the Stanford AI Lab, and also at the Stanford Robotics Center.
-                I build and research systems that combine learning-based architectures with classical robotics,
-                focusing on understanding and improving VLA models and learning-based perception. 
+                Hello! I am a junior at Stanford studying Computer Science. I work on robotics, autonomous vehicles, and machine learning at the Interactive Perception and Robot Learning Lab as part of the Stanford AI Lab, and also at the Stanford Robotics Center. I build and research systems that combine learning-based architectures with classical robotics, focusing on understanding and improving VLA models and learning-based perception.
             </p>
         </div>
 
@@ -33,21 +31,25 @@
 
             <div class="card-grid">
                 <div class="card">
-    <img src="images/libero_jepa_pipeline.png" class="card-image" alt="LIBERO-JEPA">
-    <h3>LIBERO-JEPA: Learning Action-Grounded Dynamics in Object-Centric World Models</h3>
-    <p>
-        Developed an object-centric world model for robotic manipulation using VideoSAUR slot representations and a JEPA-style transformer predictor. Discovered that standard world model objectives learn nearly action-invariant dynamics despite explicit access to robot actions. Proposed a contrastive action loss that improves action grounding and long-horizon semantic prediction on LIBERO-100.
-    </p>
-    <div class="card-links">
-        <a href="https://github.com/thomasdeng2027/Robo-JEPA" target="_blank">GitHub</a>
-        <a href="pdfs/CS231n.pdf" target="_blank">Paper</a>
-    </div>
-                                <div class="card">
-                    <img src="images/Long2.png" class="card-image" alt="GRPO VLA Fine Tuning">
-                    <h3>GRPO VLA Fine-tuning</h3>
-                    <p>Exploring stability + performance of group advantage RL for VLA models. Implemented new infrastructure for robotics RL environments and developed novel methods for state of the art VLA performance on LIBERO task suites. </p>
+                    <img src="images/libero_jepa_pipeline.png" class="card-image" alt="LIBERO-JEPA">
+                    <h3>LIBERO-JEPA: Learning Action-Grounded Dynamics in Object-Centric World Models</h3>
+                    <p>
+                        Developed an object-centric world model for robotic manipulation using VideoSAUR slot representations and a JEPA-style transformer predictor. Discovered that standard world model objectives learn nearly action-invariant dynamics despite explicit access to robot actions. Proposed a contrastive action loss that improves action grounding and long-horizon semantic prediction on LIBERO-100.
+                    </p>
                     <div class="card-links">
-                        <a href="https://github.com/thomasdeng2027/safe-robot-steering">Github</a>
+                        <a href="https://github.com/thomasdeng2027/Robo-JEPA" target="_blank">GitHub</a>
+                        <a href="pdfs/CS231n.pdf" target="_blank">Paper</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/Long2.png" class="card-image" alt="GRPO VLA Fine Tuning">
+                    <h3>Reinforcement Learning for Vision-Language-Action Models</h3>
+                    <p>
+                        Exploring stability and performance of Group Relative Policy Optimization (GRPO) for VLA models. Implemented robotics RL infrastructure and developed methods for improving performance across LIBERO manipulation benchmarks.
+                    </p>
+                    <div class="card-links">
+                        <a href="https://github.com/thomasdeng2027/safe-robot-steering" target="_blank">GitHub</a>
                         <a href="https://thomasdeng2027.github.io/pdfs/rlpdf.pdf" target="_blank">PDF</a>
                     </div>
                 </div>
@@ -55,24 +57,21 @@
                 <div class="card">
                     <img src="images/steergraph.png" class="card-image" alt="Safe Robot Steering">
                     <h3>Safe Robot Steering</h3>
-                    <p>Analyzing GRPO RL fine-tuning effects on SmolVLA across LIBERO tasks. Implemented mechanistic interpretability on SmolVLA model.</p>
+                    <p>
+                        Analyzing GRPO RL fine-tuning effects on SmolVLA across LIBERO tasks. Implemented mechanistic interpretability techniques for VLA models.
+                    </p>
                     <div class="card-links">
-                        <a href="https://github.com/thomasdeng2027/safe-robot-steering" target="_blank">Github</a>
+                        <a href="https://github.com/thomasdeng2027/safe-robot-steering" target="_blank">GitHub</a>
                         <a href="pdfs/steeringrobotssafely.pdf" target="_blank">PDF</a>
                     </div>
                 </div>
-                
-</div>
-
-
 
                 <div class="card">
                     <img src="images/lacimage.png" class="card-image" alt="Lunar Autonomy Challenge">
-                    <h3>NASA Lunar Autonomy Challenge (Published in ION)</h3>
-                    <p>AI-driven lunar rover navigation pipeline for the NASA Lunar Autonomy Challenge.
-Integrated LangSAM for rock segmentation, Depth Anything V2 for depth estimation,
-stereo disparity for geometry, and arc-based Dubins trajectories for safe
-local planning and waypoint following within NAVLab’s full autonomy stack. </p>
+                    <h3>NASA Lunar Autonomy Challenge</h3>
+                    <p>
+                        AI-driven lunar rover navigation pipeline for the NASA Lunar Autonomy Challenge. Integrated LangSAM for rock segmentation, Depth Anything V2 for depth estimation, stereo disparity for geometry, and arc-based Dubins trajectories for safe local planning and waypoint following within NAVLab’s full autonomy stack.
+                    </p>
                     <div class="card-links">
                         <a href="https://github.com/Stanford-NavLab/lunar_autonomy_challenge" target="_blank">GitHub</a>
                         <a href="https://www.ion.org/gnss/abstracts.cfm?paperID=16078" target="_blank">Publication</a>
@@ -81,127 +80,133 @@ local planning and waypoint following within NAVLab’s full autonomy stack. </p
 
                 <div class="card">
                     <img src="images/lac.png" class="card-image" alt="NAVLab Research">
-                    <h3>Stanford NAVLab Autonomous Vehicles Research </h3>
-                    <p>Path-planning and simulation research using Unreal Engine's AirSim and Carla.</p>
+                    <h3>Stanford NAVLab Autonomous Vehicles Research</h3>
+                    <p>
+                        Path-planning and simulation research using Unreal Engine's AirSim and Carla.
+                    </p>
                     <div class="card-links">
-                        <a href="https://thomasdeng2027.github.io/pdfs/report1.pdf">A*</a>
-                        <a href="https://thomasdeng2027.github.io/pdfs/report2.pdf">Image Segmentation</a>
-                        <a href="https://thomasdeng2027.github.io/pdfs/report3.pdf">ARC path planning</a>
+                        <a href="https://thomasdeng2027.github.io/pdfs/report1.pdf" target="_blank">A*</a>
+                        <a href="https://thomasdeng2027.github.io/pdfs/report2.pdf" target="_blank">Image Segmentation</a>
+                        <a href="https://thomasdeng2027.github.io/pdfs/report3.pdf" target="_blank">ARC Path Planning</a>
                     </div>
                 </div>
+
                 <div class="card">
                     <img src="images/cs224n.png" class="card-image" alt="NLP Research">
-                    <h3>Task-Specific Optimizations for GPT-2 (Stanford CS 224N Final Project 2025)</h3>
-                    <p>. Investigated parameter efficient fine-tuning via Low-Rank Adaptation (LoRA) on GPT-2, to examine whether it
-can reduce training costs without sacrificing accuracy.</p>
+                    <h3>Task-Specific Optimizations for GPT-2</h3>
+                    <p>
+                        Stanford CS224N final project investigating parameter-efficient fine-tuning with Low-Rank Adaptation (LoRA) on GPT-2 to reduce training costs without sacrificing accuracy.
+                    </p>
                     <div class="card-links">
-                        <a href="https://thomasdeng2027.github.io/pdfs/CS224n.pdf"> Final Report </a>
+                        <a href="https://thomasdeng2027.github.io/pdfs/CS224n.pdf" target="_blank">Final Report</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ===================== PROJECTS SECTION ===================== -->
         <div class="section">
             <h2>Fun Projects</h2>
 
             <div class="card-grid">
                 <div class="card">
-    <img src="images/claudegen.png" class="card-image" alt="ClaudeGen Robo">
-    <h3>ClaudeGen: Autonomous Skill Generation for Dexterous Manipulation</h3>
-    <p>
-        Developed an autonomous data generation pipeline where Claude writes, debugs, and iteratively improves robot motion scripts in NVIDIA Isaac Sim. By closing the loop between LLM-generated code and simulation feedback, the system produces large-scale manipulation demonstrations without human teleoperation, enabling scalable training data generation for dexterous robot learning.
-    </p>
-    <div class="card-links">
-        <a href="https://github.com/thomasdeng2027/claude-gen-robo" target="_blank">GitHub</a>
-        <a href="https://docs.google.com/presentation/d/1Q7il-V_tnNGJGmwul6GcnsGAHUzXnosY8CDOCGIkByY/edit?usp=sharing" target="_blank">Slides</a>
-    </div>
-</div>
-                
-                <div class="card">
-                    <img src="images/mitthink.png" class="card-image" alt="MitThink">
-                    <h3>MIT THINK Finalist Project (2022)</h3>
-                    <p>Deployment of a Collectively Optimized Swarm of Autonomous Micro UAVs for Accurate 3D Reconstruction of Destroyed Buildings During Disaster Recovery</p>
+                    <img src="images/claudegen.png" class="card-image" alt="ClaudeGen Robo">
+                    <h3>ClaudeGen: Autonomous Skill Generation for Dexterous Manipulation</h3>
+                    <p>
+                        Developed an autonomous data generation pipeline where Claude writes, debugs, and iteratively improves robot motion scripts in NVIDIA Isaac Sim. By closing the loop between LLM-generated code and simulation feedback, the system produces large-scale manipulation demonstrations without human teleoperation.
+                    </p>
                     <div class="card-links">
-                        <a href="https://github.com/thomasdeng2027/DroneResearchProject">GitHub</a>
-                        <a href="https://thomasdeng2027.github.io/pdfs/mithink.pdf">Proposal</a>
+                        <a href="https://github.com/thomasdeng2027/claude-gen-robo" target="_blank">GitHub</a>
+                        <a href="https://docs.google.com/presentation/d/1Q7il-V_tnNGJGmwul6GcnsGAHUzXnosY8CDOCGIkByY/edit?usp=sharing" target="_blank">Slides</a>
                     </div>
                 </div>
+
+                <div class="card">
+                    <img src="images/mitthink.png" class="card-image" alt="MIT THINK">
+                    <h3>MIT THINK Finalist Project</h3>
+                    <p>
+                        Deployment of a collectively optimized swarm of autonomous micro UAVs for accurate 3D reconstruction of destroyed buildings during disaster recovery.
+                    </p>
+                    <div class="card-links">
+                        <a href="https://github.com/thomasdeng2027/DroneResearchProject" target="_blank">GitHub</a>
+                        <a href="https://thomasdeng2027.github.io/pdfs/mithink.pdf" target="_blank">Proposal</a>
+                    </div>
+                </div>
+
                 <div class="card">
                     <img src="images/firesense.png" class="card-image" alt="FireSense">
-                    <h3>FireSense (2020)</h3>
-                    <p>Wildfire detection system using CNNs on an autonomous drone.</p>
+                    <h3>FireSense</h3>
+                    <p>
+                        Wildfire detection system using CNNs on an autonomous drone.
+                    </p>
                     <div class="card-links">
-                        <a href="https://github.com/Team-FireSense/FireSense">GitHub</a>
-                        <a href="https://thomasdeng2027.github.io/pdfs/FireSensePresentation.pdf">Presentation</a>
+                        <a href="https://github.com/Team-FireSense/FireSense" target="_blank">GitHub</a>
+                        <a href="https://thomasdeng2027.github.io/pdfs/FireSensePresentation.pdf" target="_blank">Presentation</a>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="images/dronedome.png" class="card-image" alt="DroneDome">
-                    <h3>DroneDome (2020)</h3>
-                    <p>Neural network–powered drone UI visualized with Swift.</p>
+                    <h3>DroneDome</h3>
+                    <p>
+                        Neural network-powered drone UI visualized with Swift.
+                    </p>
                     <div class="card-links">
-                        <a href="https://github.com/thomasdeng2027/DroneDome">GitHub</a>
-                        <a href="https://youtube.com/shorts/5ErgToTiFXU?feature=share">Demo Link</a>
+                        <a href="https://github.com/thomasdeng2027/DroneDome" target="_blank">GitHub</a>
+                        <a href="https://youtube.com/shorts/5ErgToTiFXU?feature=share" target="_blank">Demo</a>
                     </div>
                 </div>
 
                 <div class="card">
                     <img src="images/propstop.jpg" class="card-image" alt="PropStop">
-                    <h3>PropStop (2024)</h3>
-                    <p>Naive Bayes classifier for NBA player point predictions (Stanford CS109 Project).</p>
+                    <h3>PropStop</h3>
+                    <p>
+                        Naive Bayes classifier for NBA player point predictions, built as a Stanford CS109 project.
+                    </p>
                     <div class="card-links">
-                        <a href="https://github.com/thomasdeng2027/PropStop">GitHub</a>
-                        <a href="https://github.com/thomasdeng2027/pdfs/109project.pdf">PDF</a>
+                        <a href="https://github.com/thomasdeng2027/PropStop" target="_blank">GitHub</a>
+                        <a href="https://github.com/thomasdeng2027/pdfs/109project.pdf" target="_blank">PDF</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ===================== AKEER FOUNDATION ===================== -->
-    <div class="akeer-wide-card">
-        
-        <img src="images/akeer.JPEG" class="akeer-image" alt="Akeer Foundation">
+        <div class="akeer-wide-card">
+            <img src="images/akeer.JPEG" class="akeer-image" alt="Akeer Foundation">
 
-        <h2>The Akeer Foundation</h2>
+            <h2>The Akeer Foundation</h2>
 
-        <p>
-            <strong>Akeer Foundation:</strong>
-            My friends and I are founding a K–12 school in South Sudan.
-            I believe that education and opportunity are inalienable rights, and
-            every step toward universal access sets a precedent of hope for the hundreds of millions
-            who never had these liberties. 
-        </p>
-        <div class="akeer-links">
-            <a href="https://akeerfoundation.org" target="_blank" class="akeer-button">Visit Website</a>
+            <p>
+                <strong>Akeer Foundation:</strong>
+                My friends and I are founding a K-12 school in South Sudan.
+                I believe that education and opportunity are inalienable rights, and every step toward universal access sets a precedent of hope for the hundreds of millions who never had these liberties.
+            </p>
+
+            <div class="akeer-links">
+                <a href="https://akeerfoundation.org" target="_blank" class="akeer-button">Visit Website</a>
+            </div>
         </div>
 
-    </div>
-    <div class="section">
-        <h2>Personal</h2>
-        <p>
-           I enjoy playing basketball and soccer. On the road to win an IM championship. As a Philly native, I am a lifelong 76ers fan, unfortunately... Also, current Warehaus dorm ping pong champion!
-        </p>           
-    <div class="audio-block">
-        <p>I have also dabbled in music production! Here is a track I made:</p>
-        <audio controls class="audio-player">
-            <source src="music/Everlasting.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
+        <div class="section">
+            <h2>Personal</h2>
+            <p>
+                I enjoy playing basketball and soccer. On the road to win an IM championship. As a Philly native, I am a lifelong 76ers fan, unfortunately... Also, current Warehaus dorm ping pong champion!
+            </p>
 
-    </div>
+            <div class="audio-block">
+                <p>I have also dabbled in music production! Here is a track I made:</p>
+                <audio controls class="audio-player">
+                    <source src="music/Everlasting.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
 
-
-        <!-- ===================== CONTACT ===================== -->
         <div class="section">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:tdeng23@stanford.edu">tdeng23@stanford.edu</a></p>
-            <p>GitHub: <a href="https://github.com/thomasdeng2027">github.com/thomasdeng27</a></p>
+            <p>GitHub: <a href="https://github.com/thomasdeng2027" target="_blank">github.com/thomasdeng2027</a></p>
         </div>
-
-
     </div>
 </body>
 </html>
+```
