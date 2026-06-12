@@ -120,6 +120,17 @@
                 </div>
 
                 <div class="card">
+                    <video src="videos/retargeting-interp.webm" class="card-image" controls muted loop playsinline preload="metadata"></video>
+                    <h3>Egocentric Human-to-Robot Hand Retargeting</h3>
+                    <p>
+                        Pipeline that converts egocentric human videos into robot manipulation data: Detectron for hand detection, ViTPose for 2D keypoints, HaMeR for 3D hand reconstruction into MANO parameters, then dexterous retargeting with inverse kinematics onto a robot hand. The resulting trajectories are warped and randomized with Real2Render to generate large-scale robotic data for imitation learning. (Randomization and trajectory warping were handled within the Real2Render repo.)
+                    </p>
+                    <div class="card-links">
+                        <a href="https://github.com/thomasdeng2027/claude-gen-robo" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card">
                     <img src="images/mitthink.png" class="card-image" alt="MIT THINK">
                     <h3>MIT THINK Finalist Project</h3>
                     <p>
