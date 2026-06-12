@@ -32,7 +32,7 @@
                 <div class="card">
                     <img src="images/libero_jepa_pipeline.png" class="card-image" alt="LIBERO-JEPA">
                     <h3>LIBERO-JEPA: Learning Action-Grounded Dynamics in Object-Centric World Models</h3>
-                    <p>
+                    <p class="long-text">
                         Developed an object-centric world model for robotic manipulation using VideoSAUR slot representations and a JEPA-style transformer predictor. Discovered that standard world model objectives learn nearly action-invariant dynamics despite explicit access to robot actions. Proposed a contrastive action loss that improves action grounding and long-horizon semantic prediction on LIBERO-100.
                     </p>
                     <div class="card-links">
@@ -44,7 +44,7 @@
                 <div class="card">
                     <img src="images/Long2.png" class="card-image" alt="GRPO VLA Fine Tuning">
                     <h3>Reinforcement Learning for Vision-Language-Action Models</h3>
-                    <p>
+                    <p class="long-text">
                         Exploring stability and performance of Group Relative Policy Optimization (GRPO) for VLA models. Implemented robotics RL infrastructure and developed methods for improving performance across LIBERO manipulation benchmarks.
                     </p>
                     <div class="card-links">
@@ -68,7 +68,7 @@
                 <div class="card">
                     <video src="videos/retargeting-interp.webm" class="card-image" controls muted loop playsinline preload="metadata"></video>
                     <h3>Egocentric Human-to-Robot Hand Retargeting</h3>
-                    <p>
+                    <p class="long-text">
                         Pipeline that converts egocentric human videos into robot manipulation data: Detectron for hand detection, ViTPose for 2D keypoints, HaMeR for 3D hand reconstruction into MANO parameters, then dexterous retargeting with inverse kinematics onto a robot hand. The resulting trajectories are warped and randomized with Real2Render to generate large-scale robotic data for imitation learning. (Randomization and trajectory warping were handled within the Real2Render repo.)
                     </p>
                     <div class="card-links">
@@ -79,7 +79,7 @@
                 <div class="card">
                     <img src="images/lacimage.png" class="card-image" alt="Lunar Autonomy Challenge">
                     <h3>NASA Lunar Autonomy Challenge</h3>
-                    <p>
+                    <p class="long-text">
                         AI-driven lunar rover navigation pipeline for the NASA Lunar Autonomy Challenge. Integrated LangSAM for rock segmentation, Depth Anything V2 for depth estimation, stereo disparity for geometry, and arc-based Dubins trajectories for safe local planning and waypoint following within NAVLab’s full autonomy stack.
                     </p>
                     <div class="card-links">
@@ -100,17 +100,6 @@
                         <a href="https://thomasdeng2027.github.io/pdfs/report3.pdf" target="_blank">ARC Path Planning</a>
                     </div>
                 </div>
-
-                <div class="card">
-                    <img src="images/cs224n.png" class="card-image" alt="NLP Research">
-                    <h3>Task-Specific Optimizations for GPT-2</h3>
-                    <p>
-                        Stanford CS224N final project investigating parameter-efficient fine-tuning with Low-Rank Adaptation (LoRA) on GPT-2 to reduce training costs without sacrificing accuracy.
-                    </p>
-                    <div class="card-links">
-                        <a href="https://thomasdeng2027.github.io/pdfs/CS224n.pdf" target="_blank">Final Report</a>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -121,7 +110,7 @@
                 <div class="card">
                     <img src="images/claudegen.png" class="card-image" alt="ClaudeGen Robo">
                     <h3>ClaudeGen: Autonomous Skill Generation for Dexterous Manipulation</h3>
-                    <p>
+                    <p class="long-text">
                         Developed an autonomous data generation pipeline where Claude writes, debugs, and iteratively improves robot motion scripts in NVIDIA Isaac Sim. By closing the loop between LLM-generated code and simulation feedback, the system produces large-scale manipulation demonstrations without human teleoperation.
                     </p>
                     <div class="card-links">
@@ -175,6 +164,17 @@
                     <div class="card-links">
                         <a href="https://github.com/thomasdeng2027/PropStop" target="_blank">GitHub</a>
                         <a href="https://github.com/thomasdeng2027/pdfs/109project.pdf" target="_blank">PDF</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="images/cs224n.png" class="card-image" alt="NLP Research">
+                    <h3>Task-Specific Optimizations for GPT-2</h3>
+                    <p>
+                        Stanford CS224N final project investigating parameter-efficient fine-tuning with Low-Rank Adaptation (LoRA) on GPT-2 to reduce training costs without sacrificing accuracy.
+                    </p>
+                    <div class="card-links">
+                        <a href="https://thomasdeng2027.github.io/pdfs/CS224n.pdf" target="_blank">Final Report</a>
                     </div>
                 </div>
             </div>
