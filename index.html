@@ -66,6 +66,17 @@
                 </div>
 
                 <div class="card">
+                    <video src="videos/retargeting-interp.webm" class="card-image" controls muted loop playsinline preload="metadata"></video>
+                    <h3>Egocentric Human-to-Robot Hand Retargeting</h3>
+                    <p>
+                        Pipeline that converts egocentric human videos into robot manipulation data: Detectron for hand detection, ViTPose for 2D keypoints, HaMeR for 3D hand reconstruction into MANO parameters, then dexterous retargeting with inverse kinematics onto a robot hand. The resulting trajectories are warped and randomized with Real2Render to generate large-scale robotic data for imitation learning. (Randomization and trajectory warping were handled within the Real2Render repo.)
+                    </p>
+                    <div class="card-links">
+                        <a href="https://github.com/thomasdeng2027/claude-gen-robo" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="card">
                     <img src="images/lacimage.png" class="card-image" alt="Lunar Autonomy Challenge">
                     <h3>NASA Lunar Autonomy Challenge</h3>
                     <p>
@@ -116,17 +127,6 @@
                     <div class="card-links">
                         <a href="https://github.com/thomasdeng2027/claude-gen-robo" target="_blank">GitHub</a>
                         <a href="https://docs.google.com/presentation/d/1Q7il-V_tnNGJGmwul6GcnsGAHUzXnosY8CDOCGIkByY/edit?usp=sharing" target="_blank">Slides</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <video src="videos/retargeting-interp.webm" class="card-image" controls muted loop playsinline preload="metadata"></video>
-                    <h3>Egocentric Human-to-Robot Hand Retargeting</h3>
-                    <p>
-                        Pipeline that converts egocentric human videos into robot manipulation data: Detectron for hand detection, ViTPose for 2D keypoints, HaMeR for 3D hand reconstruction into MANO parameters, then dexterous retargeting with inverse kinematics onto a robot hand. The resulting trajectories are warped and randomized with Real2Render to generate large-scale robotic data for imitation learning. (Randomization and trajectory warping were handled within the Real2Render repo.)
-                    </p>
-                    <div class="card-links">
-                        <a href="https://github.com/thomasdeng2027/claude-gen-robo" target="_blank">GitHub</a>
                     </div>
                 </div>
 
