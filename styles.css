@@ -121,6 +121,15 @@ a:hover {
   line-height: 1.5;
 }
 
+/* Acceptance / venue line under card titles */
+.card p.accepted-at {
+  font-size: 14px;
+  font-style: italic;
+  color: #2c6fb0;
+  margin-top: -4px;
+  margin-bottom: 10px;
+}
+
 .card {
   background: rgba(255, 255, 255, 0.82);
   border: 1px solid #c7e2ff;
